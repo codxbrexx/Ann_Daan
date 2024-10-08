@@ -1,37 +1,114 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+body, html {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 header {
-  background-color: #ff78db;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+  background-color: #f0f0f0;
+  padding: 20px 0;
 }
-h2{
-  text-align: center;
+.logo {
+  display: flex;
+  align-items: center;
 }
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
-.cta-button {
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.slider {
+  background-color: #e0e0e0;
+  height: 300px;
+  position: relative;
+}
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.slider-nav button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.contribute, .get-help {
+  padding: 40px 0;
+}
+.contribute {
+  background-color: #ffb3ba;
+}
+.get-help {
+  background-color: #ffdfba;
+}
+.content-box {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+}
+.btn {
   display: inline-block;
-  background-color: #ff78db;
-  color: white;
   padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 1rem;
 }
-.feature {
-  background-color: white;
+.about-us {
+  padding: 40px 0;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.team-member {
+  background-color: #e0e0e0;
+  height: 100px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button{
+  background-color: #2e7dd8;
+  padding: 5px;
   border-radius: 5px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height:40px ;
+  width:100px ;
+  border-color: #ffffff;
+  box-shadow: #333;
+  justify-content:left;
+  align-items:left;
+  
+  margin: 0.6rem;
+  float: inline-end;
+
+
 }
