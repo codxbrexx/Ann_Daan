@@ -1,0 +1,207 @@
+body{
+  
+    color:white;
+    overflow: hidden;
+    
+    
+}
+
+
+
+
+
+.one{
+    background-color:darkblue;
+    height:50px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bolder;
+    color:white;
+}
+a{
+    margin-right: 100px;
+    color:white;
+    text-decoration: none;
+}
+button{
+    background-color:rgb(248, 188, 24);
+    text-align: center;
+    height:40px;
+    width:150px;
+    color: black;
+    border-color:white;
+    border-style: none;
+    font-weight: bolder;
+    
+    
+}
+.five{
+    font-weight: bold;
+    margin:100px;
+    color: white;
+   
+
+}
+.ten{
+    text-align: center;
+    color:white;
+    position: absolute;
+    bottom:1px;
+    left:480px;
+}
+#x{
+    position: absolute;
+    bottom:440px;
+}
+#y{
+    position: absolute;
+    bottom:440px;
+    left: 500px;
+}
+#z{
+    position:absolute;
+    bottom:440px;
+    left:900px;
+
+}
+#p{
+    position:absolute;
+    bottom:460px;
+    left:150px;
+
+
+}
+#q{
+    position: absolute;
+    bottom:460px;
+    left:550px;
+}
+#r{
+    position: absolute;
+    bottom:460px;
+    left:950px;
+}
+#a{
+    position:absolute;
+    bottom:350px;
+    left:150px;
+    font-size: larger;
+    color:chocolate;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.ni{
+    position: absolute;
+    bottom:150px;
+    left:885px;
+    font-weight: bold;
+}
+#b{
+    position:absolute;
+    bottom:350px;
+    left:550px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#insta{
+    width:200px;
+    position:absolute;;
+    bottom:100px;
+    left:500px;
+    background-color: blue;
+    color: white;
+    font-weight:bold;
+}
+#instagram{
+    color:white;
+}
+#mail{
+    height:10px;
+    color: red;
+    width:100px;
+}
+#tan{
+    height:125px;
+    position:absolute;
+    left:400px;
+    bottom:180px;
+
+
+
+}
+#mai{
+    height:125px;
+    position: absolute;
+    left:625px;
+    bottom:180px;
+}
+#d{
+    font-weight: 200px;
+
+}
+#project{
+    position: absolute;
+    left:235px;
+    bottom:110px;
+    font-weight: bold;
+    color: white;
+    font-size:15px;
+
+}
+#pro{
+    font-size:normal ;
+    position:absolute;
+    bottom:65px;
+    left:210px;
+}
+#c{
+    font-weight: bold;
+}
+.fa-twitter{
+    font-size:20px;
+    color:skyblue;
+    position:absolute;
+    bottom:480px;
+    left:523px;
+}
+.fa-envelope{
+    font-size:20px;
+    color: red;
+    position: absolute;
+    bottom:480px ;
+    left:125px ;
+
+}
+.fa-facebook {
+    font-size:20px;
+    color:darkblue;
+    position: absolute;
+    bottom:480px;
+    left:925px  ;
+
+}
+
+#donate{
+    color:white;
+    font-size:larger;
+
+}
+#location {
+    font-size: 20px;
+    color:white;
+    position: absolute;
+    bottom:75px;
+    right:190px;
+    
+}
+
+
+
+
+
+
+
+
+  
+  
+  

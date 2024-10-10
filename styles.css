@@ -9,7 +9,7 @@ body, html {
   padding: 0 20px;
 }
 header {
-  background-color: #f0f0f0;
+  background-color: #eadbdba5;
   padding: 20px 0;
 }
 .logo {
@@ -31,9 +31,10 @@ nav ul li a {
   text-decoration: none;
   color: #333;
 }
-.slider {
+.slider,.akc-maindonateBanner img {
+  align-items: self-start;
   background-color: #e0e0e0;
-  height: 300px;
+  height: 500px;
   position: relative;
 }
 .slider-nav {
@@ -76,15 +77,28 @@ nav ul li a {
 }
 .about-us {
   padding: 40px 0;
+  height: 500px;
+  display: inline-block;
+  border: #333 ;
 }
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  width:fit-content;
+  /* grid-row: auto; */
+  justify-content: first baseline;
+  grid-template-columns: repeat(5, 2fr);
+  padding: 20px;
+  
   gap: 20px;
-}
+  }
 .team-member {
   background-color: #e0e0e0;
-  height: 100px;
+  height: 120px;
+  width: 120px;
+  border: #333;
+  margin-top: 25px;
+  justify-content: space-between;
+  /* border-radius: 50%; */
 }
 footer {
   background-color: #333;
@@ -100,12 +114,15 @@ footer {
   background-color: #2e7dd8;
   padding: 5px;
   border-radius: 5px;
+  display: flex;
   height:40px ;
   width:100px ;
-  border-color: #ffffff;
-  box-shadow: #333;
-  justify-content:left;
+  /* border-color: #ffffff; */
+  box-shadow: 5px 5px #9a9a9a;
+ 
+  justify-content:center;
   align-items:left;
+  align-content: end;
   
   margin: 0.6rem;
   float: inline-end;
