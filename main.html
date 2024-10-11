@@ -35,7 +35,155 @@
 
     <style>
       /* we have 3 css file main.css slide.css tanmai.css  */
-      
+      h2::after {
+content: " ";
+  position: absolute;
+  right: 0;
+  animation: blink 10s step-start infinite;
+}
+#animationid {
+  position: relative;
+  font-family: serif;
+  font-size: 3rem;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid transparent; /* Optional cursor effect */
+  animation:typing 3s steps(10) infinite alternate, blink 700ms step-end infinite alternate;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(90deg, #ff6600, #0066ff);
+        -webkit-background-clip: text;
+        color: transparent;
+}
+#xyz{
+  display: flex;
+
+}
+
+
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+  25%{
+      width: 25%;
+  }
+50%{
+  width: 100%;
+}
+  75%{
+      width: 75%;
+  }
+  100% {
+      width:0; /* Reset to create a typing effect */
+  }
+}
+
+@keyframes blink {
+  0% {
+      border-color: transparent;
+  }
+}
+.container1
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+#registerdiv{
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+#btn1{
+  
+  background-color: #ff6b6b;
+  color: white;
+  padding: 5px;
+  display: flex;
+  height:37px;
+  width:90px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+#btn1:hover{
+  scale: 1.25;
+  border-radius: 10px;
+  background-color: #2e7dd8;
+}
+.div2 {
+  background-color: #ffdfba;
+  display: flex;
+  height: 350px;
+}
+.content-box {
+  background-color: #fff;
+  width: 200px;
+  height: 160px;
+  margin: 20px 0;
+  padding: 1px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      /* background-image: url(img2.jpg); */
+}
+#imgid1{
+  height: 139px;
+  width: 187px;
+  border-radius: 3px;
+}
+
+.btn {
+ 
+  background-color: #ff6b6b;
+  color: white;
+  padding: 5px;
+  display: flex;
+  height:37px;
+  width:90px;
+  text-decoration: none;
+  border-radius: 3px;
+
+}
+.btn:hover{
+  scale: 1.25;
+  border-radius: 10px;
+  background-color: #2e7dd8;
+}
+.contribute {
+  background-color: #e8f4fd;
+  display: flex;
+  justify-content:space-between;
+  height:390px;
+}
+.container2
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+
+}
+/* #one{
+  position: static ;
+  font-family: serif;
+  font-size: 3rem;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid transparent; 
+  animation:typing 3s steps(10) infinite alternate, blink 700ms step-end infinite alternate;
+}
+#one::after{
+  content: " ";
+  position: static;
+  right: 0;
+  animation: blink 10s step-start infinite;
+} */
     </style>
   </head>
   <body>
@@ -193,7 +341,7 @@
       </div>
     </section>
 
-    <section id="contribute" class="section contribute">
+    <!-- <section id="contribute" class="section contribute">
       <div class="container">
         <h2>Contribute</h2>
         <div class="content-box">
@@ -217,7 +365,45 @@
           <a href="#" class="btn">Get Help</a>
         </div>
       </div>
-    </section>
+    </section> -->
+    
+    <section class="contribute">
+      
+      <div class="container2">
+          <h2 id="animationid">Contribute</h2>
+          <div class="content-box">
+              <img src="https://www.harekrishnacharities.org/assets/img/blogs/2023/03/donate-food-for-student-education.jpeg" id="imgid1">
+          </div>
+          <a href="#" class="btn">Donate</a>
+      </div>
+      <div class="container1">
+          <h2 id="animationid">Register Here!</h2>
+          <div class="content-box">
+              <img src="https://plus.unsplash.com/premium_photo-1683121598041-2669295813d1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMGJhbmt8ZW58MHx8MHx8fDA%3D" id="imgid1">
+          </div>
+          <a href="#" class="btn">Click me</a>
+      </div>
+    
+  </section>
+
+
+  <section class="div2">
+      <div class="container">
+          <h2 id="animationid">Get help</h2>
+    
+          <div class="content-box">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_k2Ytzi0Uq-buNPsBSWNAEN8yyihkwm6-Ug&s" id="imgid1">
+          </div>
+          <a href="#" class="btn">Get Help</a>
+      </div>
+      <div class="container1">
+          <h2 id="animationid">Register Here!</h2>
+          <div class="content-box">
+              <img src="https://thumbs.dreamstime.com/z/baking-family-icing-mother-daughter-learning-decoration-home-kitchen-food-kids-help-girl-mom-happy-muffins-cupcakes-325971149.jpg" id="imgid1">
+          </div>
+          <a href="#" class="btn">Click me</a>
+      </div>
+  </section>
     <section id="how-it-works" class="section">
       <div class="container">
         <h2>How It Works</h2>
@@ -307,7 +493,8 @@
                     </div>
                     <div id="check">
                       <div class="team-member">
-                        <img src="7.jpg" alt="Team Member 7"/>
+                        <img src="7.jpeg
+                        " alt="Team Member 7"/>
                      
                        
                         </div>
@@ -328,6 +515,8 @@
         </div>
       </div>
     </section>
+
+     <!-- script refer from w3 school  -->
     <script>
       let slideIndex = 1;
       showSlides(slideIndex);
@@ -515,7 +704,7 @@
             <h3>Newsletter</h3>
             <form class="newsletter-form" >
                 <input type="email" placeholder="Your email address" required>
-                <button type="submit" class="btn btn-secondary">Subscribe</button>
+                <button style="font-size:small; margin-top: 8px;" type="submit" class="btn btn-secondary">Subscribe</button>
             </form>
         </div>
     </div>
