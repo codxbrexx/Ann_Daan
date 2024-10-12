@@ -160,12 +160,20 @@
     }
     #image3{
         border-radius: 10px;
+
+
+
     }
+
+     /* css use part  */
     #one{
+        text-align: center;
+        font-size: 50px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         background: linear-gradient(90deg, #ff6600, #0066ff);
         -webkit-background-clip: text;
         color: transparent;
+        
       }
       
     

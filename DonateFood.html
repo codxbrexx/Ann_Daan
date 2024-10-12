@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Donate Food to Help the Homeless</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+            overflow: hidden;
+            background-image: url('https://example.com/donate-banner.jpg'); /* Replace with real image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        header p {
+            font-size: 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Form Section Styling */
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0;
+        }
+
+        .form-wrapper {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60%;
+        }
+
+        .slogans {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 35%;
+        }
+
+        .slogans h3 {
+            font-size: 24px;
+            color: #ff9800;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #ff9800;
+            outline: none;
+        }
+
+        .form-group i {
+            margin-right: 10px;
+            color: #ff9800;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #e68900;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Donate Food to Help the Homeless</h1>
+            <p>Your donation makes a big difference. Help feed someone today.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="form-section">
+                <div class="slogans">
+                    <h3>“The best way to find yourself is to lose yourself in the service of others.”</h3>
+                    <img src="images.jpg" alt="End World Hunger!">
+                    <h3>“A small act of kindness can make a world of difference.”</h3>
+                </div>
+                <div class="form-wrapper">
+                    <h2>Food Donation Form</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="donorName"><i class="fas fa-user"></i> Full Name:</label>
+                            <input type="text" id="donorName" name="donorName" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="donorPhone"><i class="fas fa-phone"></i> Phone Number:</label>
+                            <input type="tel" id="donorPhone" name="donorPhone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="donorAddress"><i class="fas fa-map-marker-alt"></i> Address for Pickup:</label>
+                            <input type="text" id="donorAddress" name="donorAddress" placeholder="Enter your address or nearby landmark" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="foodType"><i class="fas fa-utensils"></i> Type of Food to Donate:</label>
+                            <select id="foodType" name="foodType" required>
+                                <option value="">Select food type</option>
+                                <option value="canned-goods">Canned Goods</option>
+                                <option value="fresh-produce">Fresh Produce</option>
+                                <option value="cooked-meals">Cooked Meals</option>
+                                <option value="dry-goods">Dry Goods (Rice, Beans, etc.)</option>
+                                <option value="ready-to-eat">Ready to Eat Meals</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity"><i class="fas fa-box"></i> Quantity of Food:</label>
+                            <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalInfo"><i class="fas fa-comments"></i> Additional Information (Optional):</label>
+                            <textarea id="additionalInfo" name="additionalInfo" placeholder="Add any additional info or special instructions"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Donation</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Help the Homeless | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
