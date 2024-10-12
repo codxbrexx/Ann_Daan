@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- <link rel="stylesheet" href="main.css" /> -->
-    <link rel="stylesheet" href="tanmai.css">
-    <link rel="stylesheet" href="slide.css">
-  
-    <link rel="stylesheet" href="ali2.css">
     
+
+
+    <!-- this is the css file -->
+    <!-- <link rel="stylesheet" href="tanmai.css"> -->
+    <link rel="stylesheet" href="slide.css">
+   <link rel="stylesheet" href="ali2.css">
     <link rel="stylesheet" href="ali.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
@@ -31,7 +34,7 @@
   />
     <!-- <link rel="stylesheet" href="pavani.css"> -->
     <link rel="shortcut icon" href="logo2.png" type="image/x-icon" />
-    <title>Anna Daan Admin</title>
+    <title>Anna Daan</title>
 
     <style>
       /* we have 3 css file main.css slide.css tanmai.css  */
@@ -44,14 +47,14 @@ content: " ";
 #animationid {
   position: relative;
   font-family: serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid transparent; /* Optional cursor effect */
   animation:typing 3s steps(10) infinite alternate, blink 700ms step-end infinite alternate;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        background: linear-gradient(90deg, #ff6600, #0066ff);
+        background:-webkit-linear-gradient(90deg, #ff6600, #000000);
         -webkit-background-clip: text;
         color: transparent;
 }
@@ -168,6 +171,7 @@ content: " ";
   
 
 }
+
 /* #one{
   position: static ;
   font-family: serif;
@@ -187,8 +191,8 @@ content: " ";
     </style>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header style="background-color: #ddbad2;">
+      <div class="hcontainer" >
         <div class="header-content">
           <div class="logo">
             <img
@@ -201,7 +205,7 @@ content: " ";
           <nav>
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#contribute">Contribute</a></li>
+              <li><a href="Donate">Contribute</a></li>
               <li><a href="#get-help">Get Help</a></li>
               <li><a href="#about-us">About Us</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -211,11 +215,22 @@ content: " ";
       </div>
     </header>
     <!-- slider css internal css h -->
-     
-     
 
-    <section id="home" class="slider"  style="margin-top: 220px;">
-      <div class="slideshow-container">
+     
+     <section id="home">
+
+     </section>
+     <!-- <section>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="img1.jpg" style="width: 100%" />
+        <div class="text"></div>
+      </div>
+
+     </section> -->
+
+    <section class="slider"; >
+     
         <div class="mySlides fade">
           <div class="numbertext">1 / 4</div>
           <img src="img1.jpg" style="width: 100%" />
@@ -247,24 +262,24 @@ content: " ";
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
+      
     </section>
     <div  id="one">
       <h1>Welcome to Anna Daan</h1>
 
      </div>
-    <section>
-      <!-- <div class="class">
+    <!-- <section>
+      <div class="class">
         <h1 id="works" style="color: #000000;" >HOW IT WORKS</h1>
-      </div> -->
-      <!-- <div class="image-container">
+      </div>
+      <div class="image-container">
         <img id="image1" src="food is donated .png" />
 
         <img id="image2" src="food is secured.png" />
 
         <img id="image3" src="food is picked up.png" />
-      </div> -->
-      <!-- <div class="how">
+      </div>
+      <div class="how">
         <div id="donated">
           <p id="head1">FOOD IS DONATED</p>
           <p id="text1">
@@ -298,23 +313,27 @@ content: " ";
       <div class="container">
           <h2>Our Mission</h2>
           <div class="mission-content">
-              <div class="mission-text" , >
-                  <p>At Anna Daan, we believe that no one should go hungry while good food goes to waste. Our mission is to create a sustainable and efficient food donation ecosystem that connects surplus food with those in need, fostering a sense of community and social responsibility.</p>
-              </div>
+            
+              <div class="mission-text" id="min">
+                <p>At Anna Daan, we believe that no one should go hungry while good food goes to waste. Our mission is to create a sustainable and efficient food donation ecosystem that connects surplus food with those in need, fostering a sense of community and social responsibility.</p>
+            </div>
+
+            
+             
               <div class="mission-stats">
                   <div class="stat-item">
                       <i class="fas fa-utensils"></i>
-                      <span class="number">00+</span>
+                      <span class="number">1M+</span>
                       <span class="label">Meals Served</span>
                   </div>
                   <div class="stat-item">
                       <i class="fas fa-users"></i>
-                      <span class="number">00+</span>
+                      <span class="number">50K+</span>
                       <span class="label">Lives Impacted</span>
                   </div>
                   <div class="stat-item">
                       <i class="fas fa-map-marker-alt"></i>
-                      <span class="number">00+</span>
+                      <span class="number">69+</span>
                       <span class="label">Cities Covered</span>
                   </div>
               </div>
@@ -327,47 +346,23 @@ content: " ";
         <div class="testimonial-grid">
           <div class="testimonial fade-in">
             <p class="testimonial-content">"Anna Daan has made a huge difference in our community. Their dedication to fighting hunger is inspiring."</p>
-            <p class="testimonial-author">- John Doe, Local Resident</p>
+            <p class="testimonial-author">- Varun Shinde, Local Resident</p>
           </div>
           <div class="testimonial fade-in">
             <p class="testimonial-content">"As a restaurant owner, I'm grateful for the opportunity to donate our surplus food and make a positive impact."</p>
-            <p class="testimonial-author">- Jane Smith, Restaurant Owner</p>
+            <p class="testimonial-author">- Virat Sharma, Restaurant Owner</p>
           </div>
           <div class="testimonial fade-in">
             <p class="testimonial-content">"The volunteers at Anna Daan are amazing. Their kindness and hard work truly make a difference."</p>
-            <p class="testimonial-author">- Mike Johnson, Volunteer</p>
+            <p class="testimonial-author">- John Doe, Volunteer</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <section id="contribute" class="section contribute">
-      <div class="container">
-        <h2>Contribute</h2>
-        <div class="content-box">
-          <p>
-            Your contribution can make a difference in someone's life. Every
-            donation, big or small, helps us fight hunger and reduce food waste.
-          </p>
-          <a href="#" class="btn">Donate Now</a>
-        </div>
-      </div>
-    </section>
 
-    <section id="get-help" class="section get-help">
-      <div class="container">
-        <h2>Get Help</h2>
-        <div class="content-box">
-          <p>
-            If you or someone you know is in need of food assistance, we're here
-            to help. Learn about our programs and how to access them.
-          </p>
-          <a href="#" class="btn">Get Help</a>
-        </div>
-      </div>
-    </section> -->
     
-    <section class="contribute">
+    <section class="contribute"  id="contribute">
       
       <div class="container2">
           <h2 id="animationid">Contribute</h2>
@@ -377,11 +372,11 @@ content: " ";
           <a href="#" class="btn">Donate</a>
       </div>
       <div class="container1">
-          <h2 id="animationid">Register Here!</h2>
+          <h2 id="animationid">Get Help!</h2>
           <div class="content-box">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWBJQIfhNfNJZDohx5KynCBYw7EYq4meyaVw&s" id="imgid1">
           </div>
-          <a href="#" class="btn">Click me</a>
+          <a href="#" class="btn">Get Help</a>
       </div>
     
   </section>
@@ -389,19 +384,19 @@ content: " ";
 
   <section class="div2">
       <div class="container">
-          <h2 id="animationid">Get help</h2>
+          <h2 id="animationid">Restaurants</h2>
     
           <div class="content-box">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_k2Ytzi0Uq-buNPsBSWNAEN8yyihkwm6-Ug&s" id="imgid1">
           </div>
-          <a href="#" class="btn">Get Help</a>
+          <a href="#" class="btn">Register</a>
       </div>
       <div class="container1">
-          <h2 id="animationid">Register Here!</h2>
+          <h2 id="animationid">Volunteer!</h2>
           <div class="content-box">
               <img src="https://thumbs.dreamstime.com/z/baking-family-icing-mother-daughter-learning-decoration-home-kitchen-food-kids-help-girl-mom-happy-muffins-cupcakes-325971149.jpg" id="imgid1">
           </div>
-          <a href="#" class="btn">Click me</a>
+          <a href="#" class="btn">Register</a>
       </div>
   </section>
     <section id="how-it-works" class="section">
@@ -409,17 +404,17 @@ content: " ";
         <h2>How It Works</h2>
         <div style="margin: 50px;" class="how-it-works">
           <div  class="step slide-in-left">
-            <img style="height: 250px; width: 250px;" src="Donate.png" alt="Donate Food">
+            <img style="height: 300px; width: 300px;" src="Donate.png" alt="Donate Food">
             <h3>Food is Donated</h3>
             <p>Generous donations of surplus and fresh food from local businesses, farmers, and community members.</p>
           </div>
           <div class="step fade-in">
-            <img style="height: 250px; width: 250px;" src="Secure.png" alt="Secure Food">
+            <img style="height: 300px; width: 300px;" src="Secure.png" alt="Secure Food">
             <h3>Food is Secured</h3>
             <p>Food is secured through our network of generous donors and partners, ensuring it reaches those in need.</p>
           </div>
           <div class="step slide-in-right">
-            <img style="height: 250px; width: 250px;" src="Pick.png" alt="Pick Up Food">
+            <img style="height: 300px; width: 300px;" src="Pick.png" alt="Pick Up Food">
             <h3>Food is Picked Up</h3>
             <p>Our team ensures that every donation is picked up promptly and delivered safely to those who need it most.</p>
           </div>
@@ -468,7 +463,7 @@ content: " ";
                  
                   </div>
           
-                  <p  id="pid" style="color: black;"><Strong>CHOWDAM TANMAI</Strong></p>
+                  <p  id="pid" style="color: black;"><Strong>Chowdam Tanmai</Strong></p>
                   <p id="pid">LCS2024016</p>
                 </div>
                 <div id="check">
@@ -478,7 +473,7 @@ content: " ";
                    
                     </div>
             
-                    <p  id="pid" style="color: black;"><Strong>SANDESH RAJ</Strong></p>
+                    <p  id="pid" style="color: black;"><Strong>Sandesh Raj</Strong></p>
                     <p id="pid">LCS2024004</p>
                   </div>
                   <div id="check">
@@ -488,7 +483,7 @@ content: " ";
                      
                       </div>
               
-                      <p  id="pid" style="color: black;"><Strong>VANSH TOMAR</Strong></p>
+                      <p  id="pid" style="color: black;"><Strong>Vansh Tomar</Strong></p>
                       <p id="pid">LCS2024043</p>
                     </div>
                     <div id="check">
@@ -499,7 +494,7 @@ content: " ";
                        
                         </div>
                 
-                        <p  id="pid" style="color: black;"><Strong>GUBBA PAVANI</Strong></p>
+                        <p  id="pid" style="color: black;"><Strong>Gubba Pavani</Strong></p>
                         <p id="pid">LIT2024035</p>
                       </div>
                       <div id="check">
@@ -509,7 +504,7 @@ content: " ";
                          
                           </div>
                   
-                          <p  id="pid" style="color: black;"><Strong>SHAIK MEER G S</Strong></p>
+                          <p  id="pid" style="color: black;"><Strong>Shaik Meer G S</Strong></p>
                           <p id="pid">LCS2024025</p>
                         </div>
         </div>
