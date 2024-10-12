@@ -4,8 +4,12 @@
   --accent-color: #e74c3c;
   --background-color: #f9f9f9;
   --text-color: #333;
+
+  /* --footer-color: #34495e; */
+=======
   --footer-color: #34495e;
   --gradient-primary: linear-gradient(135deg, #ff6b6b, #ffa502);
+
 }
 
 * {
@@ -301,11 +305,11 @@ nav ul li a:hover::after {
   font-size: 0.9rem;
 }
 
-footer {
+/* footer {
   background-color: var(--footer-color);
   color: white;
   padding: 4rem 0;
-}
+} 
 
 .footer-content {
   display: flex;
@@ -348,7 +352,7 @@ footer {
   text-align: center;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+} */
 
 @media (max-width: 768px) {
   .header-content {
@@ -376,13 +380,13 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer-content {
+  /* .footer-content {
     flex-direction: column;
   }
 
   .footer-section {
     margin-right: 0;
-  }
+  } */
 }
 
 /* Additional advanced styles */
