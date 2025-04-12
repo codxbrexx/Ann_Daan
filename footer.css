@@ -1,0 +1,254 @@
+:root {
+    --secondary-color: #4ecdc4;
+    --accent-color: #c506ff;
+    --background-color: #00000006;
+    --text-color: #333;
+    --gradient-primary: linear-gradient(135deg, #ff6b6b, #ffa502);
+    --gradient-secondary: linear-gradient(135deg, #f7d56f, #45b7af);
+
+    /* Classy footer palette */
+    --footer-background: #03102b;
+    --footer-heading: #eea756;
+    --footer-link: #ffffff;
+    --footer-link-hover: #eea756;
+    --footer-accent: #eea756;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-link);
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-content {
+    padding: 50px 0 20px;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section.branding {
+    flex-basis: 300px;
+}
+
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    color: var(--footer-heading);
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--footer-accent);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--footer-link);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--footer-link-hover);
+}
+
+.footer-section address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.footer-section address i {
+    width: 20px;
+    margin-right: 8px;
+    color: var(--footer-accent);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--footer-link-hover);
+}
+
+.newsletter-form input::placeholder {
+    color: #aaaaaa;
+}
+
+.btn-subscribe {
+    padding: 10px 15px;
+    background-color: var(--footer-accent);
+    color: var(--footer-background);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #c3a94e;
+}
+
+.social-media h4 {
+    margin: 20px 0 10px;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    color: var(--footer-link);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--footer-accent);
+    color: var(--footer-background);
+}
+
+.social-icons i {
+    font-size: 18px;
+}
+
+.donate-banner {
+    background-color: var(--footer-accent);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.donate-banner p {
+    margin: 0;
+    color: var(--footer-background);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-donate {
+    padding: 10px 25px;
+    background-color: var(--footer-background);
+    color: var(--footer-link-hover);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-donate:hover {
+    background-color: var(--footer-link-hover);
+    color: var(--footer-background);
+}
+
+.footer-bottom {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-policies {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-policies {
+        justify-content: center;
+    }
+
+    .donate-banner {
+        flex-direction: column;
+    }
+}

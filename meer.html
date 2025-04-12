@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1300px;
+            background-image: url("https://as2.ftcdn.net/v2/jpg/02/75/39/31/1000_F_275393148_rBI0GjvrEsANBwyKh8FirePAY7ipEbTw.jpg");
+            background-size: cover;
+            background-position:fixed;
+            background-attachment: fixed;
+        }
+        
+        .holder {
+            background-color: rgb(252, 246, 246); 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 420px;
+            opacity:initial;
+        
+        }
+        
+        h1, p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0ec83f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #127dd5;
+        }
+    </style>
+</head>
+<body>
+    <div class="holder">
+        <h1>Volunteer Registration</h1>
+        <img src="https://foundersguide.com/wp-content/uploads/2019/09/delivery.jpg" alt="Volunteering Image" style="width:410px; height:250px;align-items: center;display: flex; justify-content: center;">
+        <p>Join us to help fight hunger in the society!</p>
+        <form>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter Your First Name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter Your Last Name">
+
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob" name="dob"><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Contact Number">
+
+            <label for="availability">Availability:</label>
+            <select id="availability" name="availability">
+                <option value="">Select...</option>
+                <option value="weekdays">Weekdays</option>
+                <option value="weekends">Weekends</option>
+                <option value="anytime">Anytime</option>
+            </select><br>
+            
+            <label for="working-hours">Working Hours:</label>
+            <select id="working-hours" name="working-hours">
+                <option value="">Select...</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </select><br>
+
+            <label for="password">Create A Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password"><br>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password"><br><br>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>

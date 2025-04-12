@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Save and Serve Leftover Food</title>
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background:linear-gradient(135deg, #ff6b6b, #ffa502);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0;
+        }
+
+        .form-wrapper {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin-right: 20px;
+        }
+
+        .slogans {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 35%;
+        }
+
+        .slogans h3 {
+            font-size: 24px;
+            color: #4CAF50;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+a
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Save and Serve Leftover Food</h1>
+            <p>Your efforts can bring hope to many. Let’s make a difference together!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="form-section">
+                <div class="form-wrapper">
+                    <h2>Registration Form</h2>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="text1">Restaurant Name:</label>
+                            <input type="text" placeholder="Hotel Name" id="text1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="text2">Address:</label>
+                            <input type="text" placeholder="Address" id="text2" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailid">Email:</label>
+                            <input type="email" placeholder="Enter Email" id="emailid">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phonenum">Mobile Number:</label>
+                            <input type="tel" id="phonenum" placeholder="Enter Mobile Number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="owner">Owner Name:</label>
+                            <input type="text" id="owner" placeholder="Owner's name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id1">Working Hours - From:</label>
+                            <input type="time" id="id1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id2">To:</label>
+                            <input type="time" id="id2">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Create a password:</label>
+                            <input type="password" id="password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password1">Confirm password:</label>
+                            <input type="password" id="password1" required>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+                <div class="slogans">
+                    <h3>“Reviving Leftovers, Reviving Lives!”</h3>
+                    <img src="projectimg1.jpg" alt="End Food Waste!" style="max-width: 100%; height: auto;">
+                    <h3>“Together, we can make a change!”</h3>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Save and Serve Leftover Food | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
